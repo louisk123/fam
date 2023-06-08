@@ -18,7 +18,7 @@ body {
     }
 
     .timer {
-      font-size: 60px;
+      font-size: 55px;
       color: white;
       position: absolute;
       top: 50%;
@@ -30,7 +30,7 @@ font-family: Herculanum;
 .button
 {
 
-    width: 150px;
+    width: 100px;
     height: auto;
 
 
@@ -39,7 +39,7 @@ font-family: Herculanum;
 .rollbutton
 {
 
-    width: 150px;
+    width: 100px;
     height: auto;
 
 
@@ -151,7 +151,7 @@ position: relative;
 .box1 {
     width: 200px;
     height: 200px;
-    border: px solid black;
+    border: 2px solid black;
     margin-right: 0px;
     position: relative;
   }
@@ -169,7 +169,7 @@ position: relative;
         margin: 0px;
         height: 100%;
         width: 100%;
-        border: solid 0px grey;
+        border: solid 2px black;
         border-radius: 7px;
         position: absolute;
         border-style: outset;
