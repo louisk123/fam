@@ -9,6 +9,40 @@ body {
     font-size: 1em;
   }
 
+    .container {
+ position:relative;
+      display: inline-block;
+     text-align: center;
+  color: white;
+ 
+    }
+
+    .timer {
+      font-size: 60px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+font-family: Herculanum;
+    }
+
+.button
+{
+
+    width: 150px;
+    height: auto;
+
+
+}
+
+.timerb
+{
+ width: 400px;
+    height: auto;
+position: relative;
+}
+
 .container {
     display: flex;
   position: center;
