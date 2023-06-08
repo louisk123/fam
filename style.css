@@ -61,15 +61,15 @@ position: relative;
  .box {
     width: 200px;
     height: 200px;
-    border: 0px solid black;
+    border: 2px solid black;
     margin-right: 0px;
     position: relative;
   }
 
 
       #box {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         transform-style: preserve-3d;
         transform: perspective(300px) translateZ(-100px)         rotateY(0deg);
         position: relative;
@@ -81,7 +81,7 @@ position: relative;
         margin: 0px;
         height: 100%;
         width: 100%;
-        border: solid 0px grey;
+        border: solid 2px black;
         border-radius: 7px;
         position: absolute;
         border-style: outset;
@@ -151,13 +151,13 @@ position: relative;
 .box1 {
     width: 200px;
     height: 200px;
-    border: 0px solid black;
+    border: px solid black;
     margin-right: 0px;
     position: relative;
   }
       #box1 {
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         transform-style: preserve-3d;
         transform: perspective(300px) translateZ(-100px) rotateY(0deg);
         position: relative;
