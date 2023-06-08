@@ -68,7 +68,7 @@ position: relative;
 
 
       #box {
-        height: 10px;
+        height: 100px;
         width: 100px;
         transform-style: preserve-3d;
         transform: perspective(300px) translateZ(-100px)         rotateY(0deg);
