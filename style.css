@@ -59,8 +59,8 @@ position: relative;
     
   }   
  .box {
-    width: 200;
-    height: 200;
+    width: 200px;
+    height: 200px;
     border: 0px solid black;
     margin-right: 0px;
     position: relative;
@@ -149,15 +149,15 @@ position: relative;
       }
 
 .box1 {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 0px solid black;
     margin-right: 0px;
     position: relative;
   }
       #box1 {
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         transform-style: preserve-3d;
         transform: perspective(300px) translateZ(-100px) rotateY(0deg);
         position: relative;
