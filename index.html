@@ -116,6 +116,35 @@ function generate(){
  <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    
+    <div>
+<img src="timerbanner.png" class="timerb">
+</div>
+  <table>
+<tr>
+
+<td>
+
+<img class="button" src="30secbutton.png" alt="30s Timer" onmouseover="this.src='30secbuttonH.png'" onmouseout="this.src='30secbutton.png'" onclick="toggleTimer(30)">
+  <br>
+  <img class="button" src="60secbutton.png" alt="60s Timer" onmouseover="this.src='60secbuttonH.png'" onmouseout="this.src='60secbutton.png'" onclick="toggleTimer(60)">
+</td>
+
+<td>
+
+<div class="container">
+    <img src="container.png" style="width:100%;">
+    <div class="timer">
+      <p id="timer"></p>
+    </div>
+  </div>
+</td>
+</tr>
+
+</table>
+  
+  <br>
+    
     <center>
       Dice
       <br /><br />
