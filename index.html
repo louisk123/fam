@@ -166,9 +166,9 @@ function generate(){
 
 <td>
 
-<img class="button" src="30secbutton.png" alt="30s Timer"  onmouseout="this.src='30secbutton.png'" onclick="this.src='30secbuttonH.png';toggleTimer(30)">
+<img class="button" src="30secbutton.png" alt="30s Timer"  onmousedown="this.src='30secbuttonH.png'" onmouseup= "this.src='30secbutton.png'"  onmouseout="this.src='30secbutton.png'" onclick="toggleTimer(30)">
   <br>
-  <img class="button" src="60secbutton.png" alt="60s Timer"  onmouseout="this.src='60secbutton.png';this.src='60secbutton.png'" onclick="this.src='60secbuttonH.png';toggleTimer(60)">
+  <img class="button" src="60secbutton.png" alt="60s Timer"  onmousedown="this.src='60secbuttonH.png'" onmouseup= "this.src='60secbutton.png'" onmouseout="this.src='60secbutton.png';this.src='60secbutton.png'" onclick="toggleTimer(60)">
 </td>
 
 <td>
@@ -272,7 +272,7 @@ function generate(){
         </div>
       </div>
       </div>
-       <img class="button" src="roll.png" alt="Roll" onmouseout="this.src='roll.png'" onclick="this.src='roll1.png';"generate()">Roll</button>
+       <img class="button" src="roll.png" alt="Roll" onmousedown="this.src='roll1.png'" onmouseup= "this.src='roll.png'"  onclick="generate()">Roll</button>
         <br />
 
 
