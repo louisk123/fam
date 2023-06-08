@@ -59,8 +59,8 @@ position: relative;
     
   }   
  .box {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border: 0px solid black;
     margin-right: 0px;
     position: relative;
@@ -68,8 +68,8 @@ position: relative;
 
 
       #box {
-        height: 150px;
-        width: 150px;
+        height: 120px;
+        width: 120px;
         transform-style: preserve-3d;
         transform: perspective(300px) translateZ(-100px)         rotateY(0deg);
         position: relative;
@@ -82,7 +82,7 @@ position: relative;
         height: 100%;
         width: 100%;
         border: solid 0px black;
-        border-radius: 7px;
+        border-radius: 0px;
         position: absolute;
         border-style: outset;
         backface-visibility: hidden;
