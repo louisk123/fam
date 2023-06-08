@@ -3,6 +3,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     
+     // Disable right-click context menu
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault();
+    });
+    
     //timer
     
      var countdownTimer;
@@ -151,7 +156,7 @@ function generate(){
   </head>
   <body>
      <div>
-<<br><br><br>
+<br>
 </div>
     <div>
 <img src="timerbanner.png" class="timerb">
@@ -181,7 +186,7 @@ function generate(){
   
    <div>
      <br><br>
-<img src="timerbanner.png" class="timerb">
+<img src="dice.png" class="timerb">
 </div>
      <center>
   
