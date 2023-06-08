@@ -2,6 +2,40 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
+    
+    //timer
+    
+     var countdownTimer;
+    var secondsLeft = 0;
+
+    function toggleTimer(seconds) {
+      if (secondsLeft > 0) {
+        clearInterval(countdownTimer);
+        secondsLeft = 0;
+        document.getElementById("timer").textContent = "";
+      } else {
+        secondsLeft = seconds;
+        document.getElementById("timer").textContent = secondsLeft;
+        countdownTimer = setInterval(function() {
+          secondsLeft--;
+          document.getElementById("timer").textContent = secondsLeft;
+
+          if (secondsLeft <= 0) {
+            clearInterval(countdownTimer);
+            document.getElementById("timer").textContent = "Time's up!";
+            playBeepSound();
+          }
+        }, 1000);
+      }
+    }
+
+    function playBeepSound() {
+      var audio = new Audio("beep.mp3");
+      audio.play();
+    }
+    
+    
+    //dice
     var currentNumber = 1;
     var currentNumber1 = 1;
     var previousrandomnumber=-1;
