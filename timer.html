@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Timer</title>
+  <style>
+    .container {
+ position:relative;
+      display: inline-block;
+     text-align: center;
+  color: white;
+ 
+    }
+
+    .timer {
+      font-size: 60px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+font-family: Herculanum;
+    }
+
+.button
+{
+
+    width: 150px;
+    height: auto;
+
+
+}
+
+.timerb
+{
+ width: 400px;
+    height: auto;
+position: relative;
+}
+  </style>
+</head>
+<body>
+<div>
+<img src="timerbanner.png" class="timerb">
+</div>
+  <table>
+<tr>
+
+<td>
+
+<img class="button" src="30secbutton.png" alt="30s Timer" onmouseover="this.src='30secbuttonH.png'" onmouseout="this.src='30secbutton.png'" onclick="toggleTimer(30)">
+  <br>
+  <img class="button" src="60secbutton.png" alt="60s Timer" onmouseover="this.src='60secbuttonH.png'" onmouseout="this.src='60secbutton.png'" onclick="toggleTimer(60)">
+</td>
+
+<td>
+
+<div class="container">
+    <img src="container.png" style="width:100%;">
+    <div class="timer">
+      <p id="timer"></p>
+    </div>
+  </div>
+</td>
+</tr>
+
+</table>
+  
+  <br>
+  
+
+  <script>
+    var countdownTimer;
+    var secondsLeft = 0;
+
+    function toggleTimer(seconds) {
+      if (secondsLeft > 0) {
+        clearInterval(countdownTimer);
+        secondsLeft = 0;
+        document.getElementById("timer").textContent = "";
+      } else {
+        secondsLeft = seconds;
+        document.getElementById("timer").textContent = secondsLeft;
+        countdownTimer = setInterval(function() {
+          secondsLeft--;
+          document.getElementById("timer").textContent = secondsLeft;
+
+          if (secondsLeft <= 0) {
+            clearInterval(countdownTimer);
+            document.getElementById("timer").textContent = "Time's up!";
+            playBeepSound();
+          }
+        }, 1000);
+      }
+    }
+
+    function playBeepSound() {
+      var audio = new Audio("beep.mp3");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
