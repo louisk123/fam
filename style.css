@@ -36,6 +36,15 @@ font-family: Herculanum;
 
 }
 
+.rollbutton
+{
+
+    width: 50%;
+    height: auto;
+
+
+}
+
 .timerb
 {
  width: 400px;
