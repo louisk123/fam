@@ -9,12 +9,14 @@
     var secondsLeft = 0;
 
     function toggleTimer(seconds) {
+     
       if (secondsLeft > 0) {
         clearInterval(countdownTimer);
         secondsLeft = 0;
         document.getElementById("timer").textContent = "";
       } else {
         secondsLeft = seconds;
+        document.getElementById("timer").style.fontSize = "100%";
         document.getElementById("timer").textContent = secondsLeft;
         countdownTimer = setInterval(function() {
           secondsLeft--;
@@ -22,6 +24,8 @@
 
           if (secondsLeft <= 0) {
             clearInterval(countdownTimer);
+          
+             document.getElementById("timer").style.fontSize = "50%";
             document.getElementById("timer").textContent = "Time's up!";
             playBeepSound();
           }
