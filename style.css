@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Girl+Next+Door&display=swap');
+
+
 table {
   border-collapse: collapse;
   margin: 0;
@@ -18,6 +21,7 @@ td {
 body {
     width: 100%;
     margin: 10;
+  font-family: 'Girl Next Door', sans-serif;
   }
   h1 {
     font-size: 2em;
