@@ -39,7 +39,8 @@ body {
     }
 
     .timer {
-      font-size: 55px;
+      font-size: 65px;
+      font-weight:bold;
       color: white;
       position: absolute;
       top: 50%;
