@@ -23,13 +23,7 @@ body {
     margin: 10;
   font-family: 'The Girl Next Door', cursive;
   }
-  h1 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 1em;
-  }
-
+ 
     .containert {
  position:relative;
       display: inline-block;
